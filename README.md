@@ -80,12 +80,3 @@ dotnet run --project PhoneBookApi/PhoneBookApi.csproj
 
 4. When in Development, Swagger UI is available at `https://localhost:{port}/swagger`.
 
-## Notes and recommendations
-
-- The `DELETE /api/entity/delete/{name}` endpoint removes the first match by name; consider changing to delete by `id` for correctness.
-- Input validation is minimal. Consider adding DTOs and model validation attributes.
-- Connection string currently contains credentials in `appsettings.json`. For production, use secure configuration (environment variables or secrets manager).
-
-## License
-
-MIT
